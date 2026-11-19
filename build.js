@@ -25,6 +25,17 @@ data.bonus.liste.forEach((b, i) => {
   b.classe = i % 2 === 0 ? 'alt' : 'rev';
   b.dessin = illus(b.illustration);
 });
+// Accepte n'importe quel lien YouTube ou Vimeo et le convertit en lien d'intégration
+const toEmbed = (url) => {
+  if (!url) return '';
+  url = url.trim();
+  let m = url.match(/(?:youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/|live\/)|youtu\.be\/)([\w-]{11})/);
+  if (m) return `https://www.youtube-nocookie.com/embed/${m[1]}?rel=0`;
+  m = url.match(/vimeo\.com\/(?:video\/)?(\d+)/);
+  if (m) return `https://player.vimeo.com/video/${m[1]}`;
+  return url;
+};
+data.hero.video_embed = toEmbed(data.hero.video_embed);
 data.faq.questions.forEach((q, i) => { q.premiere = i === 0; });
 
 const partials = {

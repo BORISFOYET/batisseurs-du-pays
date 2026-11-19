@@ -42,7 +42,7 @@ content:
           - { name: titre_or, label: Titre (partie en or), type: string }
           - { name: titre_fin, label: Titre (fin, en blanc), type: string }
           - { name: sous_titre, label: Sous-titre, type: text }
-          - { name: video_embed, label: "Lien d'intégration de la vidéo (ex. https://www.youtube.com/embed/XXXX)", type: string }
+          - { name: video_embed, label: "Lien de la vidéo YouTube ou Vimeo (copier simplement le lien de la vidéo)", type: string }
           - { name: video_texte_attente, label: Texte affiché tant qu'il n'y a pas de vidéo, type: string }
       - name: tickets
         label: 2. Choix de l'accès
