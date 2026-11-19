@@ -22,7 +22,7 @@
     "titre_or": "sans quitter votre emploi",
     "titre_fin": ", et sans vous faire avoir",
     "sous_titre": "Rejoignez la cohorte fondatrice : en 8 semaines, vous passez de l'idée à un projet structuré, vérifié et prêt à lancer au Cameroun, en Côte d'Ivoire ou au Sénégal.",
-    "video_embed": "",
+    "video_embed": "https://www.youtube.com/watch?v=eKzmRnetw-c",
     "video_texte_attente": "[Vidéo du récit fondateur, 3 à 5 minutes, à intégrer]"
   },
   "tickets": {
@@ -40,14 +40,38 @@
       "bouton": "Je prends ma place fondateur"
     },
     "avantages": [
-      { "texte": "La communauté Le Hall sur Skool.", "dans_gratuit": true },
-      { "texte": "La check-list foncière des 3 pays.", "dans_gratuit": true },
-      { "texte": "Le programme complet en 10 modules.", "dans_gratuit": false },
-      { "texte": "8 semaines de lives avec les experts.", "dans_gratuit": false },
-      { "texte": "Le comité projet qui relit votre dossier.", "dans_gratuit": false },
-      { "texte": "Le carnet de partenaires vérifiés.", "dans_gratuit": false },
-      { "texte": "Le kit anti-arnaque et la Mission pays.", "dans_gratuit": false },
-      { "texte": "Le prix fondateur à vie.", "dans_gratuit": false }
+      {
+        "texte": "La communauté Le Hall sur Skool.",
+        "dans_gratuit": true
+      },
+      {
+        "texte": "La check-list foncière des 3 pays.",
+        "dans_gratuit": true
+      },
+      {
+        "texte": "Le programme complet en 10 modules.",
+        "dans_gratuit": false
+      },
+      {
+        "texte": "8 semaines de lives avec les experts.",
+        "dans_gratuit": false
+      },
+      {
+        "texte": "Le comité projet qui relit votre dossier.",
+        "dans_gratuit": false
+      },
+      {
+        "texte": "Le carnet de partenaires vérifiés.",
+        "dans_gratuit": false
+      },
+      {
+        "texte": "Le kit anti-arnaque et la Mission pays.",
+        "dans_gratuit": false
+      },
+      {
+        "texte": "Le prix fondateur à vie.",
+        "dans_gratuit": false
+      }
     ]
   },
   "garantie": {
@@ -76,45 +100,102 @@
   },
   "preuves": {
     "cartes": [
-      { "initiales": "SA", "photo": "", "nom": "Notre société agricole", "sous_titre": "Transformation du manioc", "texte": "Pâte de manioc pour bâtons de manioc et chikwangues, avec des partenaires sur place.", "etiquette": "Créée depuis la France", "resultat": "Une unité de production lancée sans quitter son emploi" },
-      { "initiales": "SC", "photo": "", "nom": "Notre société de conseil", "sous_titre": "Accompagnement de projets", "texte": "Montée à distance, aujourd'hui au service des porteurs de projets de la diaspora.", "etiquette": "Créée depuis la France", "resultat": "Deux entreprises bâties à distance" },
-      { "initiales": "EQ", "photo": "", "nom": "L'équipe des Bâtisseurs", "sous_titre": "Experts et entrepreneurs", "texte": "Expert-comptable, juristes, entrepreneurs navetteurs et rentrés pour de bon.", "etiquette": "À vos côtés pendant 8 semaines", "resultat": "Des experts qui relisent votre dossier" }
+      {
+        "initiales": "SA",
+        "nom": "Notre société agricole",
+        "sous_titre": "Transformation du manioc",
+        "texte": "Pâte de manioc pour bâtons de manioc et chikwangues, avec des partenaires sur place.",
+        "etiquette": "Créée depuis la France",
+        "resultat": "Une unité de production lancée sans quitter son emploi"
+      },
+      {
+        "initiales": "SC",
+        "nom": "Notre société de conseil",
+        "sous_titre": "Accompagnement de projets",
+        "texte": "Montée à distance, aujourd'hui au service des porteurs de projets de la diaspora.",
+        "etiquette": "Créée depuis la France",
+        "resultat": "Deux entreprises bâties à distance"
+      },
+      {
+        "initiales": "EQ",
+        "nom": "L'équipe des Bâtisseurs",
+        "sous_titre": "Experts et entrepreneurs",
+        "texte": "Expert-comptable, juristes, entrepreneurs navetteurs et rentrés pour de bon.",
+        "etiquette": "À vos côtés pendant 8 semaines",
+        "resultat": "Des experts qui relisent votre dossier"
+      }
     ],
     "note": "[Les témoignages des 10 fondateurs viendront ici après la première cohorte.]"
   },
   "bonus": {
     "titre": "Voici tout ce que vous recevez avec la cohorte :",
     "liste": [
-      { "etiquette": "INCLUS", "illustration": "programme", "titre": "Le programme Bâtisseur en 10 modules.", "points": [
-        "Choisir son pays et son secteur selon son budget, ses objectifs et le temps qu'on peut y consacrer.",
-        "Sécuriser le foncier : titre, bornage, notaire et pièges classiques au Cameroun, en Côte d'Ivoire et au Sénégal.",
-        "Créer sa structure OHADA, monter son budget réel et choisir ses partenaires.",
-        "Piloter à distance, puis préparer le retour à son rythme." ] },
-      { "etiquette": "BONUS 1", "illustration": "comite", "titre": "Le comité projet.", "points": [
-        "Votre dossier relu par l'expert-comptable et un juriste avant que vous n'envoyiez le moindre euro.",
-        "Ce qui tient, ce qui manque, ce qui doit changer : un retour écrit et concret.",
-        "Posez vos questions en direct au lieu de deviner comment cela s'applique à votre situation.",
-        "La différence entre un projet qui démarre bien et un projet qui coûte cher se joue souvent ici." ] },
-      { "etiquette": "BONUS 2", "illustration": "partenaires", "titre": "Le carnet de partenaires vérifiés.", "points": [
-        "Notaires, géomètres, comptables, banques et prestataires avec lesquels l'équipe a déjà travaillé.",
-        "Au Cameroun, en Côte d'Ivoire et au Sénégal.",
-        "Les bonnes questions à poser à chacun avant de signer quoi que ce soit.",
-        "Un carnet tenu à jour, que vous gardez après la cohorte." ] },
-      { "etiquette": "BONUS 3", "illustration": "kit", "titre": "Le kit anti-arnaque.", "points": [
-        "La check-list de vérification foncière, pas à pas, pour chacun des 3 pays.",
-        "Les modèles de contrat avec un gestionnaire sur place et de procuration.",
-        "Le tableau de suivi de chantier et le budget type, prêts à l'emploi.",
-        "Les erreurs qui font perdre un terrain ou un chantier, et comment les éviter." ] },
-      { "etiquette": "BONUS 4", "illustration": "mission", "titre": "La Mission pays.", "points": [
-        "Un plan de séjour pour visiter, rencontrer les partenaires et signer pendant vos congés.",
-        "Les rendez-vous à caler avant le départ, pour ne perdre aucune journée sur place.",
-        "Ce qu'il faut voir de ses propres yeux, et ce qu'on peut déléguer.",
-        "Revenez avec des décisions prises, pas seulement des photos." ] },
-      { "etiquette": "BONUS 5", "illustration": "couronne", "titre": "Le statut de fondateur, à vie.", "points": [
-        "Après la cohorte, vous gardez l'accès aux Fondations à 37 € par mois au lieu de 47 €, pour toujours.",
-        "Le titre de membre fondateur dans la communauté.",
-        "Le Vendredi des victoires pour célébrer chaque étape avec les autres Bâtisseurs.",
-        "Vous n'avancez plus jamais seul entre deux voyages au pays." ] }
+      {
+        "etiquette": "INCLUS",
+        "illustration": "programme",
+        "titre": "Le programme Bâtisseur en 10 modules.",
+        "points": [
+          "Choisir son pays et son secteur selon son budget, ses objectifs et le temps qu'on peut y consacrer.",
+          "Sécuriser le foncier : titre, bornage, notaire et pièges classiques au Cameroun, en Côte d'Ivoire et au Sénégal.",
+          "Créer sa structure OHADA, monter son budget réel et choisir ses partenaires.",
+          "Piloter à distance, puis préparer le retour à son rythme."
+        ]
+      },
+      {
+        "etiquette": "BONUS 1",
+        "illustration": "comite",
+        "titre": "Le comité projet.",
+        "points": [
+          "Votre dossier relu par l'expert-comptable et un juriste avant que vous n'envoyiez le moindre euro.",
+          "Ce qui tient, ce qui manque, ce qui doit changer : un retour écrit et concret.",
+          "Posez vos questions en direct au lieu de deviner comment cela s'applique à votre situation.",
+          "La différence entre un projet qui démarre bien et un projet qui coûte cher se joue souvent ici."
+        ]
+      },
+      {
+        "etiquette": "BONUS 2",
+        "illustration": "partenaires",
+        "titre": "Le carnet de partenaires vérifiés.",
+        "points": [
+          "Notaires, géomètres, comptables, banques et prestataires avec lesquels l'équipe a déjà travaillé.",
+          "Au Cameroun, en Côte d'Ivoire et au Sénégal.",
+          "Les bonnes questions à poser à chacun avant de signer quoi que ce soit.",
+          "Un carnet tenu à jour, que vous gardez après la cohorte."
+        ]
+      },
+      {
+        "etiquette": "BONUS 3",
+        "illustration": "kit",
+        "titre": "Le kit anti-arnaque.",
+        "points": [
+          "La check-list de vérification foncière, pas à pas, pour chacun des 3 pays.",
+          "Les modèles de contrat avec un gestionnaire sur place et de procuration.",
+          "Le tableau de suivi de chantier et le budget type, prêts à l'emploi.",
+          "Les erreurs qui font perdre un terrain ou un chantier, et comment les éviter."
+        ]
+      },
+      {
+        "etiquette": "BONUS 4",
+        "illustration": "mission",
+        "titre": "La Mission pays.",
+        "points": [
+          "Un plan de séjour pour visiter, rencontrer les partenaires et signer pendant vos congés.",
+          "Les rendez-vous à caler avant le départ, pour ne perdre aucune journée sur place.",
+          "Ce qu'il faut voir de ses propres yeux, et ce qu'on peut déléguer.",
+          "Revenez avec des décisions prises, pas seulement des photos."
+        ]
+      },
+      {
+        "etiquette": "BONUS 5",
+        "illustration": "couronne",
+        "titre": "Le statut de fondateur, à vie.",
+        "points": [
+          "Après la cohorte, vous gardez l'accès aux Fondations à 37 € par mois au lieu de 47 €, pour toujours.",
+          "Le titre de membre fondateur dans la communauté.",
+          "Le Vendredi des victoires pour célébrer chaque étape avec les autres Bâtisseurs.",
+          "Vous n'avancez plus jamais seul entre deux voyages au pays."
+        ]
+      }
     ]
   },
   "options": {
@@ -140,24 +221,56 @@
     "surtitre": "Questions fréquentes",
     "titre": "Toutes les réponses à vos questions",
     "questions": [
-      { "question": "Je suis déjà dans Le Hall gratuit. Pourquoi rejoindre la cohorte ?", "reponse": [
-        "Voyez-le ainsi. Le Hall, c'est comme regarder quelqu'un construire sa maison au pays en vidéo. Vous voyez chaque étape. Vous prenez des notes. Puis vous essayez de faire pareil, seul, à 6 000 km, sans plan, sans artisan de confiance et sans personne pour vérifier.",
-        "La cohorte, c'est construire à côté de ceux qui l'ont déjà fait, avec votre propre terrain, votre propre budget, et une équipe qui relit chaque décision. Le même projet. Des chances très différentes de le réussir du premier coup.",
-        "Les membres du Hall apprennent la méthode et avancent seuls. Les fondateurs bâtissent avec nous et lancent avec un accompagnement. Les deux fonctionnent. L'un va beaucoup plus vite." ] },
-      { "question": "Ne puis-je pas tout appliquer seul avec le contenu gratuit ?", "reponse": [
-        "Si, c'est possible. Mais ce qui coûte cher au pays, ce sont les erreurs : un terrain mal vérifié, un partenaire mal choisi, un budget sous-estimé. La cohorte sert à les éviter avant qu'elles ne vous coûtent votre épargne." ] },
-      { "question": "Ai-je besoin d'expérience ou d'un gros budget ?", "reponse": [
-        "Non. Aucun budget minimum n'est exigé et aucune expérience n'est nécessaire. Le programme vous aide justement à dimensionner un projet adapté à vos moyens, puis à le faire grandir." ] },
-      { "question": "Et si j'ai déjà essayé sans jamais aller au bout ?", "reponse": [
-        "C'est précisément pour vous. Le groupe de 10, les échéances de chaque semaine et le comité projet sont là pour que vous terminiez ce que vous commencez." ] },
-      { "question": "Je travaille à plein temps. Combien de temps faut-il ?", "reponse": [
-        "Comptez 2 à 3 heures par semaine : un live (avec replay) et les exercices de la semaine. Tout est pensé pour des salariés." ] },
-      { "question": "Le prix va-t-il augmenter ?", "reponse": [
-        "Oui. Le tarif de 997 € est réservé aux 10 fondateurs. La cohorte suivante sera au prix normal de 1 497 €." ] },
-      { "question": "Comment fonctionne la garantie ?", "reponse": [
-        "Si dans les 14 jours après le démarrage vous estimez que le programme ne vous aide pas, écrivez-nous et nous vous remboursons intégralement, sans justification." ] },
-      { "question": "Qu'est-ce que je reçois exactement ?", "reponse": [
-        "Les 10 modules, 8 semaines de lives, le comité projet, le carnet de partenaires vérifiés, le kit anti-arnaque, la Mission pays et l'accès à vie aux Fondations au prix fondateur de 37 € par mois." ] }
+      {
+        "question": "Je suis déjà dans Le Hall gratuit. Pourquoi rejoindre la cohorte ?",
+        "reponse": [
+          "Voyez-le ainsi. Le Hall, c'est comme regarder quelqu'un construire sa maison au pays en vidéo. Vous voyez chaque étape. Vous prenez des notes. Puis vous essayez de faire pareil, seul, à 6 000 km, sans plan, sans artisan de confiance et sans personne pour vérifier.",
+          "La cohorte, c'est construire à côté de ceux qui l'ont déjà fait, avec votre propre terrain, votre propre budget, et une équipe qui relit chaque décision. Le même projet. Des chances très différentes de le réussir du premier coup.",
+          "Les membres du Hall apprennent la méthode et avancent seuls. Les fondateurs bâtissent avec nous et lancent avec un accompagnement. Les deux fonctionnent. L'un va beaucoup plus vite."
+        ]
+      },
+      {
+        "question": "Ne puis-je pas tout appliquer seul avec le contenu gratuit ?",
+        "reponse": [
+          "Si, c'est possible. Mais ce qui coûte cher au pays, ce sont les erreurs : un terrain mal vérifié, un partenaire mal choisi, un budget sous-estimé. La cohorte sert à les éviter avant qu'elles ne vous coûtent votre épargne."
+        ]
+      },
+      {
+        "question": "Ai-je besoin d'expérience ou d'un gros budget ?",
+        "reponse": [
+          "Non. Aucun budget minimum n'est exigé et aucune expérience n'est nécessaire. Le programme vous aide justement à dimensionner un projet adapté à vos moyens, puis à le faire grandir."
+        ]
+      },
+      {
+        "question": "Et si j'ai déjà essayé sans jamais aller au bout ?",
+        "reponse": [
+          "C'est précisément pour vous. Le groupe de 10, les échéances de chaque semaine et le comité projet sont là pour que vous terminiez ce que vous commencez."
+        ]
+      },
+      {
+        "question": "Je travaille à plein temps. Combien de temps faut-il ?",
+        "reponse": [
+          "Comptez 2 à 3 heures par semaine : un live (avec replay) et les exercices de la semaine. Tout est pensé pour des salariés."
+        ]
+      },
+      {
+        "question": "Le prix va-t-il augmenter ?",
+        "reponse": [
+          "Oui. Le tarif de 997 € est réservé aux 10 fondateurs. La cohorte suivante sera au prix normal de 1 497 €."
+        ]
+      },
+      {
+        "question": "Comment fonctionne la garantie ?",
+        "reponse": [
+          "Si dans les 14 jours après le démarrage vous estimez que le programme ne vous aide pas, écrivez-nous et nous vous remboursons intégralement, sans justification."
+        ]
+      },
+      {
+        "question": "Qu'est-ce que je reçois exactement ?",
+        "reponse": [
+          "Les 10 modules, 8 semaines de lives, le comité projet, le carnet de partenaires vérifiés, le kit anti-arnaque, la Mission pays et l'accès à vie aux Fondations au prix fondateur de 37 € par mois."
+        ]
+      }
     ]
   },
   "pied_de_page": {
