@@ -102,14 +102,16 @@
     "cartes": [
       {
         "initiales": "SA",
-        "nom": "Notre société agricole",
-        "sous_titre": "Transformation du manioc",
-        "texte": "Pâte de manioc pour bâtons de manioc et chikwangues, avec des partenaires sur place.",
+        "photo": "/images/Capture d'écran 2026-08-31 140330.png",
+        "nom": "Notre société agricole TAGEX SARL",
+        "sous_titre": "Production et transformation du manioc ",
+        "texte": "Pâte de manioc pour bâtons de manioc et chikwangues, avec des partenaires sur place. Et farine panifiable pour les menages et boulangeries en cours de mise en place",
         "etiquette": "Créée depuis la France",
         "resultat": "Une unité de production lancée sans quitter son emploi"
       },
       {
-        "initiales": "SC",
+        "initiales": "ACCOUNT'S",
+        "photo": "/images/logo.jpg",
         "nom": "Notre société de conseil",
         "sous_titre": "Accompagnement de projets",
         "texte": "Montée à distance, aujourd'hui au service des porteurs de projets de la diaspora.",
@@ -124,8 +126,7 @@
         "etiquette": "À vos côtés pendant 8 semaines",
         "resultat": "Des experts qui relisent votre dossier"
       }
-    ],
-    "note": "[Les témoignages des 10 fondateurs viendront ici après la première cohorte.]"
+    ]
   },
   "bonus": {
     "titre": "Voici tout ce que vous recevez avec la cohorte :",
