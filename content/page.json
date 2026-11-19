@@ -153,13 +153,16 @@
         "pastille": "L'équipe",
         "photos_terrain": [
           {
-            "legende": "Photo de l'équipe"
+            "image": "/images/photo_2026-11-19_13-51-40.jpg",
+            "legende": "Expert comptable memorialiste"
           },
           {
-            "legende": "Expert-comptable en séance"
+            "image": "/images/Capture d'écran 2026-11-19 135421.png",
+            "legende": "Expert-comptable "
           },
           {
-            "legende": "Visite terrain avec un membre"
+            "image": "/images/Capture d'écran 2026-11-19 135400.png",
+            "legende": "Entrepreneur de la diaspora"
           }
         ],
         "nom": "L'équipe des Bâtisseurs",
