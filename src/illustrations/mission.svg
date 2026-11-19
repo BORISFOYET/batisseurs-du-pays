@@ -1,0 +1,4 @@
+<svg viewBox="0 0 300 300"><circle cx="150" cy="160" r="110" fill="none" stroke="rgba(255,210,140,.22)" stroke-width="2"/>
+            <circle cx="150" cy="150" r="80" fill="url(#gGlow)"/>
+            <path d="M150 95c-24 0-42 18-42 41 0 31 42 72 42 72s42-41 42-72c0-23-18-41-42-41z" fill="#111"/><circle cx="150" cy="136" r="15" fill="#F7C531"/>
+            <path d="M60 230c40-30 140-30 180 0" fill="none" stroke="#F7C531" stroke-width="3" stroke-dasharray="8 8"/></svg>

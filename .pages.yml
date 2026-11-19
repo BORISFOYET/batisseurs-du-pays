@@ -1,0 +1,159 @@
+# Configuration de l'éditeur Pages CMS (https://pagescms.org)
+media:
+  input: public/images
+  output: /images
+
+content:
+  - name: page
+    label: Page de vente (cohorte fondatrice)
+    type: file
+    path: content/page.json
+    format: json
+    fields:
+      - name: seo
+        label: Référencement (Google, partage)
+        type: object
+        fields:
+          - { name: title, label: Titre de l'onglet, type: string }
+          - { name: description, label: Description, type: text }
+      - name: liens
+        label: Liens
+        type: object
+        fields:
+          - { name: paiement_cohorte, label: Lien de paiement de la cohorte, type: string }
+          - { name: inscription_hall, label: Lien d'inscription au Hall (Skool), type: string }
+          - { name: mentions_legales, label: Lien des mentions légales, type: string }
+          - { name: cgv, label: Lien des CGV, type: string }
+          - { name: confidentialite, label: Lien de la politique de confidentialité, type: string }
+      - { name: bandeau, label: Bandeau du haut, type: string }
+      - name: bouton
+        label: Bouton doré (répété dans la page)
+        type: object
+        fields:
+          - { name: texte, label: Texte du bouton, type: string }
+          - { name: sous_texte, label: Petite ligne sous le bouton, type: string }
+          - { name: jours_garantie, label: Nombre de jours de garantie, type: string }
+      - name: hero
+        label: 1. Accroche
+        type: object
+        fields:
+          - { name: accroche, label: Petite étiquette, type: string }
+          - { name: titre_debut, label: Titre (début, en blanc), type: string }
+          - { name: titre_or, label: Titre (partie en or), type: string }
+          - { name: titre_fin, label: Titre (fin, en blanc), type: string }
+          - { name: sous_titre, label: Sous-titre, type: text }
+          - { name: video_embed, label: "Lien d'intégration de la vidéo (ex. https://www.youtube.com/embed/XXXX)", type: string }
+          - { name: video_texte_attente, label: Texte affiché tant qu'il n'y a pas de vidéo, type: string }
+      - name: tickets
+        label: 2. Choix de l'accès
+        type: object
+        fields:
+          - { name: titre, label: Titre, type: string }
+          - { name: sous_titre, label: Sous-titre, type: string }
+          - name: gratuit
+            label: Carte gratuite
+            type: object
+            fields:
+              - { name: titre, label: Titre, type: string }
+              - { name: sous_titre, label: Sous-titre, type: string }
+              - { name: bouton, label: Texte du bouton, type: string }
+          - name: payant
+            label: Carte cohorte
+            type: object
+            fields:
+              - { name: prix_barre, label: Prix barré, type: string }
+              - { name: prix, label: Prix, type: string }
+              - { name: sous_titre, label: Sous-titre, type: string }
+              - { name: bouton, label: Texte du bouton, type: string }
+          - name: avantages
+            label: Avantages (lignes des deux cartes)
+            type: object
+            list: true
+            fields:
+              - { name: texte, label: Avantage, type: string }
+              - { name: dans_gratuit, label: Inclus dans l'accès gratuit, type: boolean }
+      - name: garantie
+        label: 3. Garantie
+        type: object
+        fields:
+          - { name: titre, label: Titre, type: string }
+          - { name: paragraphes, label: Paragraphes, type: text, list: true }
+      - name: pourquoi
+        label: 4. Pourquoi les fondateurs avancent plus vite
+        type: object
+        fields:
+          - { name: titre_debut, label: Titre (blanc), type: string }
+          - { name: titre_or, label: Titre (or), type: string }
+          - { name: paragraphes, label: Paragraphes, type: text, list: true }
+      - name: preuves
+        label: 5. Preuves
+        type: object
+        fields:
+          - name: cartes
+            label: Cartes
+            type: object
+            list: true
+            fields:
+              - { name: initiales, label: Initiales (si pas de photo), type: string }
+              - { name: photo, label: Photo ronde, type: image }
+              - { name: nom, label: Nom, type: string }
+              - { name: sous_titre, label: Sous-titre, type: string }
+              - { name: texte, label: Texte, type: text }
+              - { name: etiquette, label: Étiquette encadrée, type: string }
+              - { name: resultat, label: Phrase dorée du bas, type: string }
+          - { name: note, label: Note sous les cartes (vide pour masquer), type: string }
+      - name: bonus
+        label: 6. Bonus
+        type: object
+        fields:
+          - { name: titre, label: Titre, type: string }
+          - name: liste
+            label: Panneaux
+            type: object
+            list: true
+            fields:
+              - { name: etiquette, label: "Pastille (ex. BONUS 1)", type: string }
+              - name: illustration
+                label: Illustration
+                type: select
+                options:
+                  values: [programme, comite, partenaires, kit, mission, couronne]
+              - { name: titre, label: Titre, type: string }
+              - { name: points, label: Points, type: text, list: true }
+      - name: options
+        label: 7. Les deux options
+        type: object
+        fields:
+          - { name: titre, label: Titre, type: string }
+          - name: option1
+            label: Option 1
+            type: object
+            fields:
+              - { name: billet, label: Texte du billet argent, type: string }
+              - { name: titre, label: Titre, type: string }
+              - { name: paragraphes, label: Paragraphes, type: text, list: true }
+          - name: option2
+            label: Option 2
+            type: object
+            fields:
+              - { name: billet, label: Texte du billet or, type: string }
+              - { name: titre, label: Titre, type: string }
+              - { name: paragraphes, label: Paragraphes, type: text, list: true }
+      - name: faq
+        label: 8. Questions fréquentes
+        type: object
+        fields:
+          - { name: surtitre, label: Surtitre, type: string }
+          - { name: titre, label: Titre, type: string }
+          - name: questions
+            label: Questions
+            type: object
+            list: true
+            fields:
+              - { name: question, label: Question, type: string }
+              - { name: reponse, label: Paragraphes de la réponse, type: text, list: true }
+      - name: pied_de_page
+        label: Pied de page
+        type: object
+        fields:
+          - { name: avertissement, label: Avertissement légal, type: text }

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{seo.title}}</title>
+<meta name="description" content="{{seo.description}}">
+<meta property="og:title" content="{{seo.title}}">
+<meta property="og:description" content="{{seo.description}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800&family=Outfit:wght@300;400;500;600&family=Cinzel:wght@600;700&display=swap">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+{{{icones}}}
+
+<div class="topbar">{{bandeau}}</div>
+
+<div class="page">
+<div class="wrap">
+
+  <section class="hero">
+    {{> logo}}
+    <div><span class="kicker">{{hero.accroche}}</span></div>
+    <h1>{{hero.titre_debut}} <span class="hl-text">{{hero.titre_or}}</span>{{hero.titre_fin}}</h1>
+    <p class="lead">{{hero.sous_titre}}</p>
+    <div class="video"><div class="in">
+      {{#hero.video_embed}}<iframe src="{{hero.video_embed}}" title="Vidéo de présentation" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>{{/hero.video_embed}}
+      {{^hero.video_embed}}<div><div class="play"></div><p class="ph">{{hero.video_texte_attente}}</p></div>{{/hero.video_embed}}
+    </div></div>
+    {{> cta}}
+  </section>
+
+  <section id="tickets">
+    <h2>{{tickets.titre}}</h2>
+    <p class="under">{{tickets.sous_titre}}</p>
+    <div class="tickets">
+      <div class="ticket free">
+        <svg class="wm mark" viewBox="0 0 100 100"><use href="#markw"/></svg>
+        <svg class="wm star" viewBox="0 0 100 100"><use href="#star4"/></svg>
+        <div class="thead">
+          <div class="logo"><svg><use href="#markw"/></svg><span><span class="l1">LES BÂTISSEURS</span><span class="l2">DU PAYS</span></span></div>
+          <div class="ttitle">{{tickets.gratuit.titre}}</div>
+          <div class="tsub">{{tickets.gratuit.sous_titre}}</div>
+        </div>
+        <ul class="ilist">
+          {{#tickets.avantages}}<li{{^dans_gratuit}} class="off"{{/dans_gratuit}}><svg><use href="{{#dans_gratuit}}#ico-ok{{/dans_gratuit}}{{^dans_gratuit}}#ico-no{{/dans_gratuit}}"/></svg>{{texte}}</li>
+          {{/tickets.avantages}}
+        </ul>
+        <a class="tbtn" href="{{liens.inscription_hall}}">{{tickets.gratuit.bouton}}</a>
+      </div>
+      <div class="ticket vip">
+        <svg class="wm mark" viewBox="0 0 100 100"><use href="#markw"/></svg>
+        <svg class="wm star" viewBox="0 0 100 100"><use href="#star4"/></svg>
+        <div class="thead">
+          {{> logo}}
+          <div class="ttitle"><s>{{tickets.payant.prix_barre}}</s>{{tickets.payant.prix}}</div>
+          <div class="tsub">{{tickets.payant.sous_titre}}</div>
+        </div>
+        <ul class="ilist">
+          {{#tickets.avantages}}<li><svg><use href="{{#dans_gratuit}}#ico-ok{{/dans_gratuit}}{{^dans_gratuit}}#ico-crown{{/dans_gratuit}}"/></svg>{{texte}}</li>
+          {{/tickets.avantages}}
+        </ul>
+        <a class="tbtn" href="{{liens.paiement_cohorte}}">{{tickets.payant.bouton}}</a>
+      </div>
+    </div>
+    {{> cta}}
+  </section>
+
+  <section>
+    <div class="panel guarantee">
+      <div class="dots"></div>
+      <svg class="seal" viewBox="0 0 200 200">
+        <polygon points="{{seal}}" fill="url(#gSeal)"/>
+        <circle cx="100" cy="100" r="80" fill="none" stroke="#FFF3B0" stroke-width="2" opacity=".7"/>
+        <circle cx="100" cy="100" r="72" fill="#111"/>
+        <circle cx="100" cy="100" r="44" fill="url(#gSeal)"/>
+        <defs><path id="arcT" d="M42 100 A58 58 0 0 1 158 100"/><path id="arcB" d="M38 100 A62 62 0 0 0 162 100"/></defs>
+        <text font-family="Inter Tight, Arial" font-weight="800" font-size="17" fill="#fff" letter-spacing="1.5"><textPath href="#arcT" startOffset="50%" text-anchor="middle">SATISFAIT OU</textPath></text>
+        <text font-family="Inter Tight, Arial" font-weight="800" font-size="17" fill="#fff" letter-spacing="1.5"><textPath href="#arcB" startOffset="50%" text-anchor="middle">REMBOURSÉ</textPath></text>
+        <circle cx="34" cy="100" r="3" fill="#F7C531"/><circle cx="166" cy="100" r="3" fill="#F7C531"/>
+        <text x="100" y="104" text-anchor="middle" font-family="Inter Tight, Arial" font-weight="800" font-size="40" fill="#111">{{bouton.jours_garantie}}</text>
+        <text x="100" y="124" text-anchor="middle" font-family="Inter Tight, Arial" font-weight="800" font-size="13" fill="#111">JOURS</text>
+      </svg>
+      <h2>{{garantie.titre}}</h2>
+      {{#garantie.paragraphes}}<p>{{{.}}}</p>
+      {{/garantie.paragraphes}}
+      <div class="badges">
+        <span class="tb y"><svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2" fill="#111"/><path d="M8 10V7a4 4 0 018 0v3" fill="none" stroke="#111" stroke-width="2.4"/></svg>Paiement<br>100 % sécurisé</span>
+        <span class="tb w"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="4" fill="#1a9b3a"/><path d="M7 12.5l3.5 3.5L17 9" fill="none" stroke="#fff" stroke-width="2.6"/></svg>Hébergé<br>sur Skool</span>
+        <span class="tb w2"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#F7C531"/><path d="M7 12.5l3.5 3.5L17 9" fill="none" stroke="#111" stroke-width="2.6"/></svg>Expert-comptable<br>certifié partenaire</span>
+      </div>
+      {{> cta}}
+    </div>
+  </section>
+
+  <section>
+    <h2>{{pourquoi.titre_debut}} <span class="hl-text">{{pourquoi.titre_or}}</span></h2>
+    <div class="story">
+      {{#pourquoi.paragraphes}}<p>{{{.}}}</p>
+      {{/pourquoi.paragraphes}}
+    </div>
+    <div class="proofs">
+      {{#preuves.cartes}}<div class="proof">
+        <div class="top">{{#photo}}<img class="av" src="{{photo}}" alt="">{{/photo}}{{^photo}}<div class="av">{{initiales}}</div>{{/photo}}<span class="nm">{{nom}}</span><span class="hd">{{sous_titre}}</span><p class="ds">{{texte}}</p><span class="chip">{{etiquette}}</span></div>
+        <div class="bot"><b>{{resultat}}</b></div>
+      </div>
+      {{/preuves.cartes}}
+    </div>
+    {{#preuves.note}}<p class="soon">{{preuves.note}}</p>{{/preuves.note}}
+    {{> cta}}
+  </section>
+
+  <section>
+    <h2>{{bonus.titre}}</h2>
+    <div class="bonuses">
+      {{#bonus.liste}}<div class="panel bonus {{classe}}">
+        <div class="frame"><span class="cornermark"><svg><use href="#mark"/></svg></span><div class="in">{{{dessin}}}</div></div>
+        <div class="btext">
+          <span class="btag">{{etiquette}}</span>
+          <h3>{{titre}}</h3>
+          <ul class="chk">
+            {{#points}}<li><svg><use href="#ico-chk"/></svg>{{.}}</li>
+            {{/points}}
+          </ul>
+        </div>
+      </div>
+      {{/bonus.liste}}
+    </div>
+    {{> cta}}
+  </section>
+
+  <section>
+    <h2>{{options.titre}}</h2>
+    <div class="options">
+      <div class="opt">
+        <div class="stage"><div class="tk s"><div class="main"><svg><use href="#gem"/></svg><span class="nm">{{options.option1.billet}}</span></div><div class="perf"></div><div class="stub"><span>ENTRÉE UNIQUE</span><i></i></div></div></div>
+        <div class="txt">
+          <h3><span class="gold">Option 1 :</span> {{options.option1.titre}}</h3>
+          {{#options.option1.paragraphes}}<p>{{{.}}}</p>{{/options.option1.paragraphes}}
+        </div>
+      </div>
+      <div class="or">ou..</div>
+      <div class="opt v">
+        <div class="stage"><div class="tk g"><div class="main"><svg><use href="#gem"/></svg><span class="nm">{{options.option2.billet}}</span></div><div class="perf"></div><div class="stub"><span>ENTRÉE UNIQUE</span><i></i></div></div></div>
+        <div class="txt">
+          <h3><span class="gold">Option 2 :</span> {{options.option2.titre}}</h3>
+          {{#options.option2.paragraphes}}<p>{{{.}}}</p>{{/options.option2.paragraphes}}
+        </div>
+      </div>
+    </div>
+    {{> cta}}
+  </section>
+
+  <section>
+    <span class="eyebrow">{{faq.surtitre}}</span>
+    <h2>{{faq.titre}}</h2>
+    <div class="faqbox">
+      {{#faq.questions}}<details{{#premiere}} open{{/premiere}}><summary>{{question}}</summary><div class="ans">{{#reponse}}<p>{{{.}}}</p>{{/reponse}}</div></details>
+      {{/faq.questions}}
+    </div>
+    {{> cta}}
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    {{> logo}}
+    <div class="links"><a href="{{liens.mentions_legales}}">Mentions légales</a><a href="{{liens.cgv}}">Conditions générales de vente</a><a href="{{liens.confidentialite}}">Confidentialité</a></div>
+    <p>{{pied_de_page.avertissement}}</p>
+  </div>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "batisseurs-du-pays",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": { "build": "node build.js" },
+  "dependencies": { "mustache": "4.2.0" }
+}

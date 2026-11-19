@@ -1,0 +1,6 @@
+<svg viewBox="0 0 300 300"><g stroke="rgba(255,190,80,.35)" stroke-width="2">
+            <line x1="40" y1="0" x2="40" y2="300"/><line x1="90" y1="0" x2="90" y2="300"/><line x1="140" y1="0" x2="140" y2="300"/><line x1="190" y1="0" x2="190" y2="300"/><line x1="240" y1="0" x2="240" y2="300"/></g>
+            <rect x="20" y="120" width="60" height="50" rx="6" fill="rgba(214,150,60,.6)"/><rect x="220" y="120" width="60" height="50" rx="6" fill="rgba(214,150,60,.6)"/>
+            <rect x="70" y="95" width="160" height="105" rx="8" fill="#111" stroke="#ddd" stroke-width="3"/><rect x="78" y="103" width="144" height="89" rx="3" fill="url(#gGlow)"/>
+            <circle cx="150" cy="147" r="20" fill="#111"/><path d="M144 137l16 10-16 10z" fill="#F7C531"/>
+            <rect x="55" y="200" width="190" height="8" rx="4" fill="#cfcfcf"/></svg>
