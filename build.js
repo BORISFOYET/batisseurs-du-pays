@@ -36,6 +36,13 @@ const toEmbed = (url) => {
   return url;
 };
 data.hero.video_embed = toEmbed(data.hero.video_embed);
+data.preuves.cartes.forEach((c) => {
+  const photos = (c.photos_terrain || []).filter((p) => p && (p.image || p.legende)).slice(0, 3);
+  photos.forEach((p, i) => { p.active = i === 0; });
+  c.photos_terrain = photos;
+  c.premiere_photo = photos[0] || { legende: 'Photo de terrain' };
+  c.plusieurs_photos = photos.length > 1;
+});
 data.faq.questions.forEach((q, i) => { q.premiere = i === 0; });
 
 const partials = {

@@ -102,21 +102,51 @@
     "cartes": [
       {
         "initiales": "SA",
-        "photo": "/images/Capture d'écran 2026-08-31 140330.png",
         "nom": "Notre société agricole TAGEX SARL",
         "sous_titre": "Production et transformation du manioc ",
         "texte": "Pâte de manioc pour bâtons de manioc et chikwangues, avec des partenaires sur place. Et farine panifiable pour les menages et boulangeries en cours de mise en place",
         "etiquette": "Créée depuis la France",
-        "resultat": "Une unité de production lancée sans quitter son emploi"
+        "resultat": "Une unité de production lancée sans quitter son emploi",
+        "logo": "/images/Capture d'écran 2026-08-31 140330.png",
+        "pastille": "Sur le terrain",
+        "photos_terrain": [
+          {
+            "image": "",
+            "legende": "Champ de manioc"
+          },
+          {
+            "image": "",
+            "legende": "Unité de transformation"
+          },
+          {
+            "image": "",
+            "legende": "Pâte de manioc conditionnée"
+          }
+        ]
       },
       {
         "initiales": "ACCOUNT'S",
-        "photo": "/images/logo.jpg",
-        "nom": "Notre société de conseil",
+        "nom": "Notre société de conseil ACCOUNT'S SARL",
         "sous_titre": "Accompagnement de projets",
         "texte": "Montée à distance, aujourd'hui au service des porteurs de projets de la diaspora.",
         "etiquette": "Créée depuis la France",
-        "resultat": "Deux entreprises bâties à distance"
+        "resultat": "Deux entreprises bâties à distance",
+        "logo": "/images/logo.jpg",
+        "pastille": "Sur le terrain",
+        "photos_terrain": [
+          {
+            "image": "",
+            "legende": "Rendez-vous client"
+          },
+          {
+            "image": "",
+            "legende": "Bureaux du cabinet"
+          },
+          {
+            "image": "",
+            "legende": "Atelier porteurs de projets"
+          }
+        ]
       },
       {
         "initiales": "EQ",
@@ -124,7 +154,23 @@
         "sous_titre": "Experts et entrepreneurs",
         "texte": "Expert-comptable, juristes, entrepreneurs navetteurs et rentrés pour de bon.",
         "etiquette": "À vos côtés pendant 8 semaines",
-        "resultat": "Des experts qui relisent votre dossier"
+        "resultat": "Des experts qui relisent votre dossier",
+        "logo": "",
+        "pastille": "L'équipe",
+        "photos_terrain": [
+          {
+            "image": "",
+            "legende": "Photo de l'équipe"
+          },
+          {
+            "image": "",
+            "legende": "Expert-comptable en séance"
+          },
+          {
+            "image": "",
+            "legende": "Visite terrain avec un membre"
+          }
+        ]
       }
     ]
   },

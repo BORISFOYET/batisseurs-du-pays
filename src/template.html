@@ -103,7 +103,12 @@
     </div>
     <div class="proofs">
       {{#preuves.cartes}}<div class="proof">
-        <div class="top">{{#photo}}<img class="av" src="{{photo}}" alt="">{{/photo}}{{^photo}}<div class="av">{{initiales}}</div>{{/photo}}<span class="nm">{{nom}}</span><span class="hd">{{sous_titre}}</span><p class="ds">{{texte}}</p><span class="chip">{{etiquette}}</span></div>
+        <div class="shot"><span class="pill-terrain">{{pastille}}</span>
+          {{#premiere_photo}}<div class="main-ph{{#image}} has-img{{/image}}">{{#image}}<img src="{{image}}" alt="{{legende}}" loading="lazy">{{/image}}<span class="lbl"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="14" rx="3" fill="none" stroke="#fff" stroke-width="2"/><circle cx="12" cy="13" r="3.5" fill="none" stroke="#fff" stroke-width="2"/><path d="M8 6l2-3h4l2 3" fill="none" stroke="#fff" stroke-width="2"/></svg><span class="t">{{legende}}</span></span></div>{{/premiere_photo}}
+          {{#plusieurs_photos}}<div class="thumbs">{{#photos_terrain}}<button type="button" aria-label="Voir : {{legende}}" aria-pressed="{{#active}}true{{/active}}{{^active}}false{{/active}}" data-src="{{image}}" data-l="{{legende}}">{{#image}}<img src="{{image}}" alt="" loading="lazy">{{/image}}</button>{{/photos_terrain}}</div>{{/plusieurs_photos}}
+        </div>
+        {{#logo}}<div class="logo-plate"><img src="{{logo}}" alt="Logo {{nom}}"></div>{{/logo}}{{^logo}}<div class="logo-plate init">{{initiales}}</div>{{/logo}}
+        <div class="top"><span class="nm">{{nom}}</span><span class="hd">{{sous_titre}}</span><p class="ds">{{texte}}</p><span class="chip">{{etiquette}}</span></div>
         <div class="bot"><b>{{resultat}}</b></div>
       </div>
       {{/preuves.cartes}}
@@ -172,5 +177,21 @@
   </div>
 </footer>
 </div>
+<script>
+document.querySelectorAll('.proof').forEach(function (card) {
+  var main = card.querySelector('.main-ph'); if (!main) return;
+  card.querySelectorAll('.thumbs button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var img = main.querySelector('img');
+      if (b.dataset.src) {
+        if (!img) { img = document.createElement('img'); main.prepend(img); }
+        img.src = b.dataset.src; img.alt = b.dataset.l; main.classList.add('has-img');
+      } else if (img) { img.remove(); main.classList.remove('has-img'); }
+      main.querySelector('.t').textContent = b.dataset.l;
+      card.querySelectorAll('.thumbs button').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+    });
+  });
+});
+</script>
 </body>
 </html>

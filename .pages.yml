@@ -95,7 +95,15 @@ content:
             list: true
             fields:
               - { name: initiales, label: Initiales (si pas de photo), type: string }
-              - { name: photo, label: Photo ronde, type: image }
+              - { name: logo, label: Logo (affiché sur une plaque blanche), type: image }
+              - { name: pastille, label: "Pastille sur la photo (ex. Sur le terrain)", type: string }
+              - name: photos_terrain
+                label: Photos de terrain (3 au maximum)
+                type: object
+                list: true
+                fields:
+                  - { name: image, label: Photo, type: image }
+                  - { name: legende, label: Légende, type: string }
               - { name: nom, label: Nom, type: string }
               - { name: sous_titre, label: Sous-titre, type: string }
               - { name: texte, label: Texte, type: text }
