@@ -102,75 +102,71 @@
     "cartes": [
       {
         "initiales": "SA",
-        "nom": "Notre société agricole TAGEX SARL",
-        "sous_titre": "Production et transformation du manioc ",
-        "texte": "Pâte de manioc pour bâtons de manioc et chikwangues, avec des partenaires sur place. Et farine panifiable pour les menages et boulangeries en cours de mise en place",
-        "etiquette": "Créée depuis la France",
-        "resultat": "Une unité de production lancée sans quitter son emploi",
         "logo": "/images/Capture d'écran 2026-08-31 140330.png",
         "pastille": "Sur le terrain",
         "photos_terrain": [
           {
-            "image": "",
+            "image": "/images/photo_2026-11-18_17-12-47.jpg",
             "legende": "Champ de manioc"
           },
           {
-            "image": "",
+            "image": "/images/photo_2026-11-18_17-12-54.jpg",
             "legende": "Unité de transformation"
           },
           {
-            "image": "",
+            "image": "/images/Capture d'écran 2026-11-19 133704.png",
             "legende": "Pâte de manioc conditionnée"
           }
-        ]
+        ],
+        "nom": "Notre société agricole TAGEX SARL",
+        "sous_titre": "Production et transformation du manioc ",
+        "texte": "Pâte de manioc pour bâtons de manioc et chikwangues, avec des partenaires sur place. Et farine panifiable pour les menages et boulangeries en cours de mise en place",
+        "etiquette": "Créée depuis la France",
+        "resultat": "Une unité de production lancée sans quitter son emploi"
       },
       {
         "initiales": "ACCOUNT'S",
-        "nom": "Notre société de conseil ACCOUNT'S SARL",
-        "sous_titre": "Accompagnement de projets",
-        "texte": "Montée à distance, aujourd'hui au service des porteurs de projets de la diaspora.",
-        "etiquette": "Créée depuis la France",
-        "resultat": "Deux entreprises bâties à distance",
         "logo": "/images/logo.jpg",
         "pastille": "Sur le terrain",
         "photos_terrain": [
           {
-            "image": "",
+            "image": "/images/photo_2026-09-19_13-18-13.jpg",
             "legende": "Rendez-vous client"
           },
           {
-            "image": "",
+            "image": "/images/photo_2026-09-19_13-17-45.jpg",
             "legende": "Bureaux du cabinet"
           },
           {
-            "image": "",
+            "image": "/images/photo_2026-09-19_13-17-57.jpg",
             "legende": "Atelier porteurs de projets"
           }
-        ]
+        ],
+        "nom": "Notre société de conseil ACCOUNT'S SARL",
+        "sous_titre": "Accompagnement de projets",
+        "texte": "Montée à distance, aujourd'hui au service des porteurs de projets de la diaspora.",
+        "etiquette": "Créée depuis la France",
+        "resultat": "Deux entreprises bâties à distance"
       },
       {
         "initiales": "EQ",
+        "pastille": "L'équipe",
+        "photos_terrain": [
+          {
+            "legende": "Photo de l'équipe"
+          },
+          {
+            "legende": "Expert-comptable en séance"
+          },
+          {
+            "legende": "Visite terrain avec un membre"
+          }
+        ],
         "nom": "L'équipe des Bâtisseurs",
         "sous_titre": "Experts et entrepreneurs",
         "texte": "Expert-comptable, juristes, entrepreneurs navetteurs et rentrés pour de bon.",
         "etiquette": "À vos côtés pendant 8 semaines",
-        "resultat": "Des experts qui relisent votre dossier",
-        "logo": "",
-        "pastille": "L'équipe",
-        "photos_terrain": [
-          {
-            "image": "",
-            "legende": "Photo de l'équipe"
-          },
-          {
-            "image": "",
-            "legende": "Expert-comptable en séance"
-          },
-          {
-            "image": "",
-            "legende": "Visite terrain avec un membre"
-          }
-        ]
+        "resultat": "Des experts qui relisent votre dossier"
       }
     ]
   },
