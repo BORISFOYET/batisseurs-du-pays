@@ -55,4 +55,13 @@ fs.mkdirSync(path.join(root, 'dist'), { recursive: true });
 fs.writeFileSync(path.join(root, 'dist/index.html'), html);
 fs.copyFileSync(path.join(root, 'src/styles.css'), path.join(root, 'dist/styles.css'));
 if (fs.existsSync(path.join(root, 'public'))) fs.cpSync(path.join(root, 'public'), path.join(root, 'dist'), { recursive: true });
-console.log('dist/index.html généré');
+
+// Quiz « Êtes-vous prêt pour le retour ? »
+const quiz = JSON.parse(read('content/quiz.json'));
+quiz.icones = data.icones;
+quiz.json = JSON.stringify(quiz.questions ? {
+  piliers: quiz.piliers, questions: quiz.questions, profils: quiz.profils, capture: quiz.capture,
+} : {}).replace(/</g, '\\u003c');
+fs.writeFileSync(path.join(root, 'dist/quiz.html'), Mustache.render(read('src/quiz.html'), quiz));
+['quiz.css', 'quiz.js'].forEach((f) => fs.copyFileSync(path.join(root, 'src', f), path.join(root, 'dist', f)));
+console.log('dist/index.html et dist/quiz.html générés');

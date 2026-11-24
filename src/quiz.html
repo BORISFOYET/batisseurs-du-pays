@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{seo.title}}</title>
+<meta name="description" content="{{seo.description}}">
+<meta property="og:title" content="{{seo.title}}">
+<meta property="og:description" content="{{seo.description}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800&family=Outfit:wght@300;400;500;600&family=Cinzel:wght@600;700&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/quiz.css">
+</head>
+<body>
+{{{icones}}}
+<div class="page quiz-page">
+<div class="wrap">
+  <header class="qz-head"><a href="/" class="logo"><svg><use href="#mark"/></svg><span><span class="l1">LES BÂTISSEURS</span><span class="l2">DU PAYS</span></span></a></header>
+
+  <main id="quiz" class="qz">
+    <!-- Accueil -->
+    <section class="qz-screen" data-screen="intro">
+      <div class="qz-card intro">
+        <span class="kicker">{{accueil.accroche}}</span>
+        <h1>{{accueil.titre_debut}} <span class="hl-text">{{accueil.titre_or}}</span></h1>
+        <p class="lead">{{accueil.sous_titre}}</p>
+        <ul class="qz-pillars">{{#piliers}}<li><svg><use href="#ico-chk"/></svg>{{nom}}</li>{{/piliers}}</ul>
+        <div class="cta-row"><button type="button" class="cta" id="start"><b>{{accueil.bouton}}</b><span>{{accueil.rassurance}}</span></button></div>
+      </div>
+    </section>
+
+    <!-- Questions -->
+    <section class="qz-screen" data-screen="question" hidden>
+      <div class="qz-card">
+        <div class="qz-top">
+          <button type="button" class="qz-back" id="back">← Retour</button>
+          <span class="qz-count" id="count"></span>
+        </div>
+        <div class="qz-bar"><i id="bar"></i></div>
+        <span class="btag" id="pillar"></span>
+        <h2 class="qz-q" id="qtext"></h2>
+        <div class="qz-answers" id="answers"></div>
+      </div>
+    </section>
+
+    <!-- Capture -->
+    <section class="qz-screen" data-screen="capture" hidden>
+      <div class="qz-card capture">
+        <svg class="qz-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2" fill="url(#gGold)"/><path d="M8 10V7a4 4 0 018 0v3" fill="none" stroke="#F7C531" stroke-width="2.4"/></svg>
+        <h2>{{capture.titre}}</h2>
+        <p class="lead">{{capture.texte}}</p>
+        <form id="lead" class="qz-form" novalidate>
+          <label for="prenom">Prénom</label>
+          <input id="prenom" name="prenom" type="text" autocomplete="given-name" required>
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <p class="qz-err" id="err" hidden></p>
+          <button type="submit" class="cta"><b>{{capture.bouton}}</b></button>
+          <p class="qz-mention">{{capture.mention}}</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Résultat -->
+    <section class="qz-screen" data-screen="result" hidden>
+      <div class="qz-card result">
+        <div class="qz-score">
+          <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="10"/><circle id="ring" cx="60" cy="60" r="52" fill="none" stroke="url(#gGold)" stroke-width="10" stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="326.7" transform="rotate(-90 60 60)"/></svg>
+          <div><b id="score">0</b><span>/100</span></div>
+        </div>
+        <span class="btag" id="pname"></span>
+        <h2 id="ptitle"></h2>
+        <p class="lead" id="ptext"></p>
+        <div class="cta-row"><a class="cta" id="pcta" href="/"><b id="pbtn"></b></a></div>
+      </div>
+
+      <h2 class="qz-sub">Votre score par pilier</h2>
+      <div class="qz-card bars" id="bars"></div>
+
+      <div class="qz-end">
+        <p>{{fin.partager}}</p>
+        <div class="qz-share"><input id="share" type="text" readonly aria-label="Lien du quiz"><button type="button" id="copy">Copier le lien</button></div>
+        <button type="button" class="qz-back" id="restart">{{fin.refaire}}</button>
+      </div>
+    </section>
+  </main>
+</div>
+<footer><div class="wrap"><p>Les Bâtisseurs du Pays · Ce quiz donne une indication générale et ne constitue pas un conseil juridique ou financier.</p></div></footer>
+</div>
+
+<script id="quiz-data" type="application/json">{{{json}}}</script>
+<script src="/quiz.js"></script>
+</body>
+</html>

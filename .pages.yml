@@ -165,3 +165,81 @@ content:
         type: object
         fields:
           - { name: avertissement, label: Avertissement légal, type: text }
+
+  - name: quiz
+    label: Quiz « Prêt pour le retour ? »
+    type: file
+    path: content/quiz.json
+    format: json
+    fields:
+      - name: seo
+        label: Référencement (Google, partage)
+        type: object
+        fields:
+          - { name: title, label: Titre de l'onglet, type: string }
+          - { name: description, label: Description, type: text }
+      - name: accueil
+        label: Écran d'accueil
+        type: object
+        fields:
+          - { name: accroche, label: Petite étiquette, type: string }
+          - { name: titre_debut, label: Titre (blanc), type: string }
+          - { name: titre_or, label: Titre (or), type: string }
+          - { name: sous_titre, label: Sous-titre, type: text }
+          - { name: bouton, label: Texte du bouton, type: string }
+          - { name: rassurance, label: Petite ligne sous le bouton, type: string }
+      - name: capture
+        label: Demande de l'e-mail avant le résultat
+        type: object
+        fields:
+          - { name: activer, label: Demander prénom et e-mail, type: boolean }
+          - { name: titre, label: Titre, type: string }
+          - { name: texte, label: Texte, type: text }
+          - { name: bouton, label: Texte du bouton, type: string }
+          - { name: mention, label: Petite mention, type: string }
+          - { name: url_envoi, label: "Adresse d'envoi des contacts (Formspree, Make, Brevo…)", type: string }
+      - name: piliers
+        label: Piliers (catégories de questions)
+        type: object
+        list: true
+        fields:
+          - { name: id, label: "Code du pilier (ne pas modifier)", type: string }
+          - { name: nom, label: Nom affiché, type: string }
+          - { name: conseil_faible, label: Conseil si score faible, type: text }
+          - { name: conseil_fort, label: Conseil si score élevé, type: text }
+      - name: questions
+        label: Questions
+        type: object
+        list: true
+        fields:
+          - name: pilier
+            label: Pilier
+            type: select
+            options:
+              values: [vision, finances, projet, juridique, pilotage]
+          - { name: question, label: Question, type: string }
+          - name: reponses
+            label: Réponses
+            type: object
+            list: true
+            fields:
+              - { name: texte, label: Réponse, type: string }
+              - { name: points, label: "Points (0 à 3)", type: number }
+      - name: profils
+        label: Profils de résultat
+        type: object
+        list: true
+        fields:
+          - { name: min, label: Score minimum, type: number }
+          - { name: max, label: Score maximum, type: number }
+          - { name: nom, label: Nom du profil, type: string }
+          - { name: titre, label: Titre, type: string }
+          - { name: texte, label: Texte, type: text }
+          - { name: bouton, label: Texte du bouton, type: string }
+          - { name: lien, label: Lien du bouton, type: string }
+      - name: fin
+        label: Bas de page du résultat
+        type: object
+        fields:
+          - { name: partager, label: Texte de partage, type: string }
+          - { name: refaire, label: Bouton pour refaire le quiz, type: string }

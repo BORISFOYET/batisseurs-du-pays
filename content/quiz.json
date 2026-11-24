@@ -1,0 +1,115 @@
+{
+  "seo": {
+    "title": "Êtes-vous prêt pour le retour ? · Les Bâtisseurs du Pays",
+    "description": "15 questions, 4 minutes : découvrez votre score sur 100 et votre prochaine étape pour investir au pays sans quitter votre emploi."
+  },
+  "accueil": {
+    "accroche": "Quiz gratuit · 4 minutes",
+    "titre_debut": "Êtes-vous prêt pour",
+    "titre_or": "le retour ?",
+    "sous_titre": "15 questions pour savoir où vous en êtes sur les 5 piliers d'un investissement réussi au pays. Votre score sur 100 et vos conseils personnalisés s'affichent à la fin.",
+    "bouton": "Je commence le quiz",
+    "rassurance": "Gratuit · Sans engagement · Résultat immédiat"
+  },
+  "capture": {
+    "activer": true,
+    "titre": "Votre score est prêt",
+    "texte": "Indiquez votre prénom et votre e-mail pour voir votre résultat et recevoir la check-list foncière offerte.",
+    "bouton": "Voir mon résultat",
+    "mention": "Pas de spam. Vous pouvez vous désinscrire à tout moment.",
+    "url_envoi": ""
+  },
+  "piliers": [
+    { "id": "vision", "nom": "Vision et famille", "conseil_faible": "Commencez par écrire votre « carte du retour » : où, quand, avec qui, et pour quoi faire. Sans cette boussole, chaque décision d'investissement se prend au hasard.", "conseil_fort": "Votre vision est claire. Partagez-la avec vos proches pour qu'elle devienne un projet de famille." },
+    { "id": "finances", "nom": "Finances", "conseil_faible": "Avant d'envoyer de l'argent, fixez un budget réel avec une marge de 20 % et une épargne de sécurité en Europe. C'est ce qui évite de tout arrêter au premier imprévu.", "conseil_fort": "Votre base financière est solide. L'enjeu est maintenant de la protéger avec un suivi des dépenses sur place." },
+    { "id": "projet", "nom": "Projet et marché", "conseil_faible": "Choisissez un secteur que vous comprenez et testez la demande avant d'investir gros : une petite activité qui tourne vaut mieux qu'un grand projet sur le papier.", "conseil_fort": "Votre projet est déjà cadré. Faites-le relire par un regard extérieur avant de lancer les dépenses." },
+    { "id": "juridique", "nom": "Juridique et foncier", "conseil_faible": "C'est là que se perdent le plus d'économies de la diaspora. Ne payez aucun terrain sans titre foncier vérifié, et donnez à votre activité une structure OHADA.", "conseil_fort": "Vous connaissez les règles. Gardez une trace écrite de chaque transaction et de chaque procuration." },
+    { "id": "pilotage", "nom": "Réseau et pilotage à distance", "conseil_faible": "Ne confiez pas tout à une seule personne de la famille. Entourez-vous de partenaires vérifiés et mettez en place des comptes rendus réguliers avec photos.", "conseil_fort": "Votre réseau sur place est un vrai atout. Formalisez les rôles et les comptes rendus pour qu'il tienne dans la durée." }
+  ],
+  "questions": [
+    { "pilier": "vision", "question": "Où en est votre projet de retour ou d'investissement au pays ?", "reponses": [
+      { "texte": "C'est une envie, sans plus de précision", "points": 0 },
+      { "texte": "J'y pense souvent, mais rien n'est écrit", "points": 1 },
+      { "texte": "J'ai une idée du pays, de la ville et du type de projet", "points": 2 },
+      { "texte": "J'ai un plan écrit avec des étapes et des dates", "points": 3 } ] },
+    { "pilier": "vision", "question": "Votre conjoint ou votre famille proche partage-t-il ce projet ?", "reponses": [
+      { "texte": "Nous n'en avons pas vraiment parlé", "points": 0 },
+      { "texte": "Nous en avons parlé, mais nos avis divergent", "points": 1 },
+      { "texte": "Ils sont plutôt d'accord sur le principe", "points": 2 },
+      { "texte": "C'est un projet commun, décidé ensemble", "points": 3 } ] },
+    { "pilier": "vision", "question": "À quel horizon envisagez-vous un vrai retour (même partiel) ?", "reponses": [
+      { "texte": "Je ne sais pas", "points": 0 },
+      { "texte": "Dans plus de 10 ans", "points": 1 },
+      { "texte": "Dans 5 à 10 ans", "points": 2 },
+      { "texte": "Dans moins de 5 ans", "points": 3 } ] },
+    { "pilier": "finances", "question": "Avez-vous mis de côté un budget dédié à votre projet au pays ?", "reponses": [
+      { "texte": "Non, pas encore", "points": 0 },
+      { "texte": "Un peu, sans objectif précis", "points": 1 },
+      { "texte": "Oui, j'épargne chaque mois dans ce but", "points": 2 },
+      { "texte": "Oui, et je connais le montant dont j'ai besoin", "points": 3 } ] },
+    { "pilier": "finances", "question": "Avez-vous déjà envoyé de l'argent pour un projet qui n'a pas abouti ?", "reponses": [
+      { "texte": "Oui, plusieurs fois", "points": 0 },
+      { "texte": "Oui, une fois", "points": 1 },
+      { "texte": "Non, car je n'ai encore rien lancé", "points": 2 },
+      { "texte": "Non, mes envois sont suivis et justifiés", "points": 3 } ] },
+    { "pilier": "finances", "question": "Si votre projet ne rapportait rien pendant 12 mois, que se passerait-il ?", "reponses": [
+      { "texte": "Je serais en grande difficulté", "points": 0 },
+      { "texte": "Ce serait très tendu", "points": 1 },
+      { "texte": "Ce serait gérable grâce à mon salaire", "points": 2 },
+      { "texte": "C'est prévu dans mon budget", "points": 3 } ] },
+    { "pilier": "projet", "question": "Savez-vous dans quel secteur vous voulez investir ?", "reponses": [
+      { "texte": "Pas du tout", "points": 0 },
+      { "texte": "J'hésite entre plusieurs idées", "points": 1 },
+      { "texte": "Oui, j'ai choisi un secteur", "points": 2 },
+      { "texte": "Oui, et je connais déjà ses clients et ses prix", "points": 3 } ] },
+    { "pilier": "projet", "question": "Avez-vous vérifié qu'il existe une demande pour votre produit ou service ?", "reponses": [
+      { "texte": "Non", "points": 0 },
+      { "texte": "J'en ai discuté avec des proches", "points": 1 },
+      { "texte": "J'ai observé le marché sur place", "points": 2 },
+      { "texte": "J'ai déjà vendu ou testé une première offre", "points": 3 } ] },
+    { "pilier": "projet", "question": "Votre projet a-t-il un budget chiffré et un calendrier ?", "reponses": [
+      { "texte": "Non", "points": 0 },
+      { "texte": "Une estimation approximative", "points": 1 },
+      { "texte": "Un budget détaillé, sans calendrier", "points": 2 },
+      { "texte": "Un budget détaillé et un calendrier", "points": 3 } ] },
+    { "pilier": "juridique", "question": "Que savez-vous de la vérification d'un terrain avant son achat ?", "reponses": [
+      { "texte": "Rien, je fais confiance au vendeur ou à la famille", "points": 0 },
+      { "texte": "Je sais qu'il faut un papier, sans savoir lequel", "points": 1 },
+      { "texte": "Je connais le titre foncier et le rôle du notaire", "points": 2 },
+      { "texte": "Je sais faire vérifier un titre au cadastre et à la conservation foncière", "points": 3 } ] },
+    { "pilier": "juridique", "question": "Sous quelle forme comptez-vous exercer votre activité ?", "reponses": [
+      { "texte": "Je n'y ai pas réfléchi", "points": 0 },
+      { "texte": "De manière informelle, au nom d'un proche", "points": 1 },
+      { "texte": "Je sais qu'il faut une société, sans savoir laquelle", "points": 2 },
+      { "texte": "J'ai choisi une forme OHADA (SARL, SAS…) adaptée", "points": 3 } ] },
+    { "pilier": "juridique", "question": "Vos accords sur place sont-ils écrits ?", "reponses": [
+      { "texte": "Non, tout se fait à l'oral", "points": 0 },
+      { "texte": "Quelques échanges WhatsApp", "points": 1 },
+      { "texte": "Certains accords sont écrits", "points": 2 },
+      { "texte": "Oui, contrats et procurations signés", "points": 3 } ] },
+    { "pilier": "pilotage", "question": "Qui suivrait votre projet au quotidien sur place ?", "reponses": [
+      { "texte": "Je ne sais pas encore", "points": 0 },
+      { "texte": "Un membre de ma famille, sans rôle défini", "points": 1 },
+      { "texte": "Une personne de confiance avec un rôle défini", "points": 2 },
+      { "texte": "Un gestionnaire ou partenaire avec contrat et objectifs", "points": 3 } ] },
+    { "pilier": "pilotage", "question": "Comment sauriez-vous, depuis l'Europe, que tout avance comme prévu ?", "reponses": [
+      { "texte": "Je l'apprendrais lors de mon prochain voyage", "points": 0 },
+      { "texte": "Par des appels de temps en temps", "points": 1 },
+      { "texte": "Par des photos et des nouvelles régulières", "points": 2 },
+      { "texte": "Par un compte rendu chiffré chaque semaine ou chaque mois", "points": 3 } ] },
+    { "pilier": "pilotage", "question": "Connaissez-vous des professionnels fiables sur place (notaire, comptable, banque) ?", "reponses": [
+      { "texte": "Aucun", "points": 0 },
+      { "texte": "Des contacts recommandés, jamais testés", "points": 1 },
+      { "texte": "Un ou deux avec qui j'ai déjà travaillé", "points": 2 },
+      { "texte": "Un réseau complet de professionnels vérifiés", "points": 3 } ] }
+  ],
+  "profils": [
+    { "min": 0, "max": 39, "nom": "Le Rêveur", "titre": "Votre envie est là, il manque les fondations", "texte": "Vous avez le désir de bâtir au pays, mais les bases ne sont pas encore posées. C'est le moment le plus important : les erreurs coûteuses se font souvent maintenant, par impatience. Commencez par apprendre gratuitement avec la communauté.", "bouton": "Rejoindre Le Hall gratuitement", "lien": "#" },
+    { "min": 40, "max": 69, "nom": "L'Explorateur", "titre": "Vous avancez, mais il reste des angles morts", "texte": "Vous avez déjà réfléchi à votre projet et posé certaines bases. Quelques points faibles peuvent pourtant vous coûter cher. Un cadre et un regard d'expert vous feraient gagner des mois.", "bouton": "Découvrir la cohorte fondatrice", "lien": "/" },
+    { "min": 70, "max": 100, "nom": "Le Bâtisseur", "titre": "Vous êtes prêt à passer à l'action", "texte": "Votre projet est mûr. Ce qui fera la différence maintenant : faire relire votre dossier, sécuriser vos partenaires et lancer avec méthode. C'est exactement ce que fait la cohorte fondatrice.", "bouton": "Réserver ma place fondateur", "lien": "/" }
+  ],
+  "fin": {
+    "partager": "Partagez le quiz avec un proche qui rêve aussi de rentrer :",
+    "refaire": "Refaire le quiz"
+  }
+}
